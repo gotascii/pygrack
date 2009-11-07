@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/default.css" type="text/css">
+  </head>
+  <body>
+    <h1>Glue Blog</h1>
+    <div class="content">
+      <p>Here is a block of code that will be syntax highlighted as a block of ruby code because the class="code ruby".</p>
+      <pre class="code ruby">
+        # make sure you dry all your glue
+        def sticking
+         @gloo = 'pasting'
+         puts @gloo
+        end
+        puts "glue is good for #{sticking}"
+      </pre>
+      <pre>
+        This is a pre tag that will not be highlighted because it does not have class="code".
+      </pre>
+      <p>Here is some code that will be highlighted as a java function because the class="code java".</p>
+      <pre class="code java">
+        void side(PVector start, PVector end) {
+          float t = 0;
+          beginShape(QUAD_STRIP);
+          for (int i = 0; i = steps; i++) {
+            vertex(x, y, z);
+            t += dt;
+          }
+          endShape();
+        }
+      </pre>
+    </div>
+  </body>
+</html>

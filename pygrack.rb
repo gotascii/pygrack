@@ -24,7 +24,9 @@ class Pygrack
       node.replace(pyg)
     end
 
-    [status, headers, [doc.to_s]]
+    response = doc.to_s
+    headers["Content-Length"] = response.length.to_s
+    [status, headers, [response]]
   end
   
 end
